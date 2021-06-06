@@ -1,6 +1,8 @@
 # RoboticsND-Home-Service-Robot
 Fifth project of the Robotics Software Engineer Nanodegree.
 
+![Home service robot preview](https://github.com/JMViJi/RoboticsND-Home-Service-Robot/blob/main/Media/Home%20service%20robot%20preview.png)
+
 # Packages and first steps
 
 
@@ -42,6 +44,10 @@ Finally we have the packages that will be created throughout the project or that
 2. Add markers: This package allows us to easily display primitive objects such as arrows, boxes, spheres, and lines in rviz, so that we can perform the task of simulating the picking up and delivery of a virtual package.
 3. Pgm map creator: It allows to create a binay occupancy grid. Although it is not used directly in this project, it may become necessary when making any change to our environment.
 4. RVIZ: Widely used throughout the projects, rviz is a 3D visualizer for the ROS.
+
+# Gazebo World 
+
+![Gazebo world](https://github.com/JMViJi/RoboticsND-Home-Service-Robot/blob/main/Media/World.png)
 
 # Directory Tree 
 
@@ -88,4 +94,7 @@ Finally we have the packages that will be created throughout the project or that
 The last test of all is intended to simulate the collection and delivery of a fictitious package. Initially, a marker must be displayed in the pickup zone waiting to be picked up. Once the robot reaches its position, its collection must be simulated by making the package disappear and wait 5 seconds to carry out the task. Later the robot must go to the delivery area where it will deposit the package.
 
 ## Results 
+
+![Home service robot](https://github.com/JMViJi/RoboticsND-Home-Service-Robot/blob/main/Media/Home%20service%20robot.gif)
+
 

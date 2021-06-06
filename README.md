@@ -43,5 +43,49 @@ Finally we have the packages that will be created throughout the project or that
 3. Pgm map creator: It allows to create a binay occupancy grid. Although it is not used directly in this project, it may become necessary when making any change to our environment.
 4. RVIZ: Widely used throughout the projects, rviz is a 3D visualizer for the ROS.
 
+# Directory Tree 
+
+```
+.
+├── catkin_ws
+│   └── src
+│       ├── add_markers
+│       │   ├── CMakeLists.txt
+│       │   ├── include
+│       │   │   └── add_markers
+│       │   ├── package.xml
+│       │   └── src
+│       │       ├── add_markers.cpp
+│       │       └── add_markers_model.cpp
+│       ├── CMakeLists.txt 
+│       ├── map
+│       │   ├── pizzeria.pgm
+│       │   ├── pizzeria.world
+│       │   └── pizzeria.yaml
+│       ├── pick_objects
+│       │   ├── CMakeLists.txt
+│       │   ├── include
+│       │   │   └── pick_objects
+│       │   ├── package.xml
+│       │   └── src
+│       │       └── pick_objects.cpp
+│       ├── rvizConfig
+│       ├── scripts
+│       │   ├── add_markers.sh
+│       │   ├── home_service.sh
+│       │   ├── pick_objects.sh
+│       │   ├── test_navigation.sh
+│       │   └── test_slam.sh
+│       ├── slam_gmapping
+│       ├── turtlebot
+│       ├── turtlebot_interactions
+│       └── turtlebot_simulator
+└── README.md
+```
+
+
 # Home Service Robot 
 The last test of all is intended to simulate the collection and delivery of a fictitious package. Initially, a marker must be displayed in the pickup zone waiting to be picked up. Once the robot reaches its position, its collection must be simulated by making the package disappear and wait 5 seconds to carry out the task. Later the robot must go to the delivery area where it will deposit the package.
+
+## Results 
+
